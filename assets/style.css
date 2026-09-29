@@ -125,6 +125,8 @@ p:last-child { margin-bottom: 0; }
 }
 
 section { position: relative; }
+/* Sprungziele nicht unter die klebende Kopfzeile schieben */
+section[id], [id] { scroll-margin-top: 96px; }
 
 .band { padding-block: clamp(68px, 9vw, 136px); }
 .band--dark { background: var(--ink); color: var(--paper); }
